@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <title>Validate Form</title>
+  </head>
+  <body>
+    <section class="hero is-fullheight is-bold is-light">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-half">
+              <h1 class="title has-text-centered">Validate Form</h1>
+              <form>
+                <div class="field">
+                  <label class="label">Name</label>
+                  <div class="control has-icons-left">
+                    <input class="input name" type="text" id="name" placeholder="Name"><span class="icon is-small is-left"><i class="fas fa-user"></i></span>
+                    <p class="help is-danger is-invisible">This Name is invalid</p>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control has-icons-left">
+                    <input class="input email" type="text" id="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-at"></i></span>
+                    <p class="help is-danger is-invisible">This Email is invalid</p>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Zip code</label>
+                  <div class="control has-icons-left">
+                    <input class="input zip" type="text" id="zip" placeholder="Zip code"><span class="icon is-small is-left"><i class="fas fa-map-marker"></i></span>
+                    <p class="help is-danger is-invisible">This Zip code is invalid</p>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Phone</label>
+                  <div class="control has-icons-left">
+                    <input class="input phone" type="text" id="phone" placeholder="Phone"><span class="icon is-small is-left"><i class="fas fa-phone"></i></span>
+                    <p class="help is-danger is-invisible">This Phone is invalid</p>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="control">
+                    <button class="button is-link is-fullwidth is-outlined">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/validate.js"></script>
+  </body>
+</html>

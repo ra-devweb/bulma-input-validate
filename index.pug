@@ -1,0 +1,51 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css")
+        link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.7.1/css/all.css")
+        title Validate Form
+    body
+
+        section.hero.is-fullheight.is-bold.is-light
+            .hero-body
+                .container
+                    .columns
+                        .column.is-half
+                            h1.title.has-text-centered Validate Form
+                            form
+                                .field
+                                    label.label Name
+                                    .control.has-icons-left
+                                        input(type="text" id="name" placeholder="Name" class="input name")
+                                        span.icon.is-small.is-left
+                                            <i class="fas fa-user"></i>
+                                        p.help.is-danger.is-invisible This Name is invalid
+                                .field
+                                    label.label Email
+                                    .control.has-icons-left
+                                        input(type="text" id="email" placeholder="Email" class="input email")
+                                        span.icon.is-small.is-left
+                                            <i class="fas fa-at"></i>
+                                        p.help.is-danger.is-invisible This Email is invalid
+                                .field
+                                    label.label Zip code
+                                    .control.has-icons-left
+                                        input(type="text" id="zip" placeholder="Zip code" class="input zip")
+                                        span.icon.is-small.is-left
+                                            <i class="fas fa-map-marker"></i>
+                                        p.help.is-danger.is-invisible This Zip code is invalid
+                                .field
+                                    label.label Phone
+                                    .control.has-icons-left
+                                        input(type="text" id="phone" placeholder="Phone" class="input phone")
+                                        span.icon.is-small.is-left
+                                            <i class="fas fa-phone"></i>
+                                        p.help.is-danger.is-invisible This Phone is invalid
+                                .field
+                                    .control
+                                        button.button.is-link.is-fullwidth.is-outlined Submit
+
+        script(src="js/validate.js")
